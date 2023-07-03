@@ -1,0 +1,192 @@
+.colorEditar{
+    background-color: rgb(34, 96, 178);
+    color:white!important
+}
+
+.colorEliminar{
+    background-color: rgb(240, 106, 29);
+    color:white!important
+}
+
+.colorAgregar{
+    background-color: #96c93e;
+    color: white;
+}
+
+
+.texto-small {
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+}
+
+.texto-medium {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.texto-large {
+    font-size: 1.25rem;
+}
+
+.texto-xlarge-negrita {
+    font-size: 1.5rem;
+    font-weight:600
+}
+
+.texto-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem
+}
+
+.fondo-badge {
+    border-radius: 0.15rem
+}
+
+.fondo-casi-negro {
+    background-color: #353a40;
+}
+
+.area-texto {
+    height: 6rem !important
+}
+
+.botonEnviar {
+    background-color: #96c93e;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.botonEnviar:hover {
+    background-color: #6b9622;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.fondo-footer {
+    background: rgb(28, 55, 68);
+    background: linear-gradient(90deg, rgba(28, 55, 68, 1) 0%, rgba(30, 83, 114, 1) 100%);
+
+}
+
+.links-footer {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.totalAPagar {
+    background-color: rgb(200, 231, 241);
+    color:rgb(10, 78, 146);
+    font-weight: 400;
+    font-size:0.9rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    margin-bottom:0rem;
+    
+   
+}
+
+@media (max-width:428px) and (min-width:300px) {
+    .barra {
+        padding: 0% 5% 1% 5% !important;
+        margin: 0 0 0 0 !important;
+
+    }
+
+    .brand {
+        padding: 0 0 0 0 !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    #imagenbrand {
+        width: 40px;
+        height: auto;
+    }
+
+    #textobrand {
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    .linksheader {
+        font-size: 50%
+    }
+
+    .hambur {
+        font-size: 50%;
+    }
+
+    #textoconferencia {
+        font-size: 55%;
+        line-height: 0.7rem;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #tituloconferencia {
+        font-size: 16px;
+        line-height: 0.5rem
+    }
+
+    .botonConferencia {
+        font-size: 50%
+    }
+}
+
+@media (max-width:599px) and (min-width:429px) {
+    .barra {
+        padding: 0% 5% 1% 5% !important;
+        margin: 0 0 0 0 !important;
+
+    }
+
+    .brand {
+        padding: 0 0 0 0 !important;
+        margin: 0 0 0 0 !important;
+    }
+
+    #imagenbrand {
+        width: 47px;
+        height: auto;
+    }
+
+    #textobrand {
+            font-size: 59%;
+    }
+
+    .linksheader {
+        font-size: 50%
+    }
+
+    .hambur {
+        font-size: 59%;
+    }
+
+    #textoconferencia {
+        font-size: 65%;
+        line-height: 0.8rem;
+        margin-left: 5rem;
+    }
+
+    #tituloconferencia {
+        font-size: 16px;
+        line-height: 0.6rem
+    }
+
+    .botonConferencia {
+        font-size: 59%
+    }
+
+
+}
+
+@media (max-width:991px) and (min-width:768px)
+{
+    .texto-xlarge-negrita{
+        font-size: 1rem;
+
+    }
+}
