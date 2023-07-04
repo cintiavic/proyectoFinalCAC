@@ -12,6 +12,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <%@include file="head.jsp" %>
                 <title>Conf Bs As - Panel Admin</title>
+                <script>
+                    function confirmDelete() {
+                        return confirm("¿Está seguro que desea eliminar el orador?");
+                    }
+                    function nuevoOrador() {
+                        window.location.href = "<%=request.getContextPath()%>/alta_orador.jsp";
+                    }
+                </script>
+
     </head>
 
     <body>
@@ -20,7 +29,10 @@
             <div class="container mb-20">
                 <br><br>
                 <p class="h3 text-center m-3-0-2-0 p-0">ADMINISTRAR ORADORES</p>
-               
+                <div class="text-end"><button class="btn botonEnviar btn-sm" onclick="nuevoOrador()">Nuevo Orador</button>
+                </div>
+                
+                <br>
                  <table class="table">
                         <thead>
                             <tr class="text-center text-medium">
@@ -37,7 +49,7 @@
                             <%
                                 for(Orador unOrador : listaOradores) {
                             %>
-                             <tr class="texto-medium">
+                             <tr class="text-center texto-medium">
                                <th scope="row"> <%=unOrador.getId()%> </th>
                                <td> <%=unOrador.getNombre()%></td>
                                <td> <%=unOrador.getApellido()%></td>
@@ -46,7 +58,10 @@
                                <td>
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <button type="button" class="btn btn-primary btn-sm">Editar</button>
-                                    <button type="button" class="btn btn-danger btn-sm">Borrar</button>
+                                    <form method="POST" action="<%=request.getContextPath()%>/BajaOradorController">
+                                        <input type="hidden" name="id" value="<%= unOrador.getId() %>">
+                                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirmDelete();">Borrar</button>
+                                    </form>
                                 </div>
                                 </td>
                                
