@@ -107,26 +107,27 @@
                 ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
     </div>
     <div class="container mt-0">
-        <form>
+        <form method="post"
+        action="<%=request.getContextPath()%>/AltaOradorController">
             <div class="row justify-content-center mb-3">
                 <div class="col-md-3 mt-3">
-                    <input type="text" class="form-control texto-medium py-0" id="floatingNombre" placeholder="Nombre">
+                    <input name="nombreOrador" type="text" class="form-control texto-medium py-0" id="floatingNombre" placeholder="Nombre">
                 </div>
                 <div class="col-md-3 mt-3">
-                    <input type="text" class="form-control texto-medium py-0" id="floatingApellido"
+                    <input  name="apellidoOrador" type="text" class="form-control texto-medium py-0" id="floatingApellido"
                         placeholder="Apellido">
                 </div>
             </div>
             <div class="row justify-content-center mb-3">
                 <div class="col-md-6">
-                    <textarea class="form-control area-texto" id="temaCharla" name="text"
+                    <textarea name="temaCharlaOrador" class="form-control area-texto" id="temaCharla" name="text"
                         placeholder="Sobre qué quieres hablar?"></textarea>
                     <div id="recuerdaTitulo" class="form-text texto-small">Recuerda incluir un título para tu charla
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn col-6 botonEnviar" aria-pressed="false">Enviar</button>
+                <button type="submit" class="btn col-6 botonEnviar" aria-pressed="false">Enviar</button>
             </div>
         </form>
     </div>
